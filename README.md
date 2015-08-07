@@ -1,0 +1,1 @@
+This is a basic app that authenticates to LinkedIn and asks some survey questions via backbone. Mostly done to learn backbone and the new OWIN auth stuff.

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - JobFinder</title>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+    <link href="~/Content/3rdparty/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/3rdParty/modernizr-2.6.2.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">JobFinder</a>
+                <!----button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button-->
+            </div>
+        </div>
+    </div>
+    <!--header><h1>JobFinder</h1></!--header-->
+    <div class="body-content container">
+        
+        @RenderBody()
+        <hr />
+    </div>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - hross.net</p>
+    </footer>
+
+    <script src="~/Scripts/3rdParty/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/3rdParty/bootstrap.min.js"></script>
+    <script src="~/Scripts/3rdParty/underscore-min.js"></script>
+    <script src="~/Scripts/3rdParty/backbone-min.js"></script>
+
+    @RenderSection("scripts", false)
+</body>
+</html>
